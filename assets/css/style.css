@@ -32,8 +32,8 @@ header {
     border-width: .5px;
     border-color: grey;
     border-top-width: 0px;
-    position: absolute;
     top: 0px;
+    position: absolute;
 }
 
 header::after {
@@ -61,6 +61,7 @@ header::after {
 nav {
     width: 0 auto;
     float: right;
+    padding-right: 30px;
 }
 
 nav ul {
@@ -148,7 +149,7 @@ footer {
 }
 
 img {
-    width: 233px;
+    width: 250px;
     height: 180px;
     margin-right: 10px;
     margin-left: 20;
@@ -181,5 +182,100 @@ label {
     color: #4aaaa5;
     font-weight: bold
 }
-    
+
+/* Responsive adjustments */
+
+@media all and (max-width: 980px) {
+    .wrapper {
+        width: 100%;
+    }
+    .inside-wrapper {
+        width: 90%;
+    }
+    header {
+        width: 100%;
+    } 
+    main {
+        width: 100%
+    }
+}
+
+@media all and (max-width: 768px) {
+    .wrapper-slim {
+        width: 100%;
+    }
+    .inside-wrapper-slim {
+        width: 100%;
+    }
+    #horizontal-bar-2 {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    main {
+        width: 100%
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .inside-wrapper{
+        width: 100%;
+    }
+    nav ul {
+        padding-top: 30px;
+        margin: 5px;
+    }
+    #main-content-heading {
+        padding-left: 10px
+    }
+    #headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        float: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px
+    }
+    #horizontal-bar-2 {
+        width: 90%;
+    }
+    nav ul li {
+        margin-top: 25px;
+        padding-right: 2px;
+        list-style: none;
+    }
+}
+
+@media all and (max-width: 640px) {
+    nav {
+        margin-top: 36px;
+    }
+
+    p {
+        font-size: 18px;
+        padd
+    }
+}
+
+@media all and (max-width: 462px) {
+    #headshot {
+        margin-top: 60px;
+    }
+    nav {
+        margin-right: 75px;
+    }
+    p {
+        font-size: 18px;
+        padding: 12px;
+    }
+    #gallery {
+        padding-top: 30;
+    }
+
+   
+
+
 
